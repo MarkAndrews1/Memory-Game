@@ -9,7 +9,7 @@ let score = 0;
 
 document.querySelector(".score").textContent = score;
 
-fetch('../cards.json')
+fetch('./cards.json')
     .then((res) => res.json())
     .then((data) => {
         cards = [...data, ...data];
